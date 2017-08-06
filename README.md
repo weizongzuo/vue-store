@@ -1,4 +1,3 @@
-# y
 
 > A pure front-end project developed using vue 2.0
 
