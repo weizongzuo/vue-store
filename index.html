@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>购物</title>
+    <link rel="stylesheet" type="text/css" href="static/css/reset.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+
+
+    <script type="text/javascript">
+      var scale = 1 / devicePixelRatio;
+      document.querySelector('meta[name="viewport"]').setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+      var reSize = function () {
+        var deviceWidth = document.documentElement.clientWidth > 1300 ? 1300 : document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = (deviceWidth / 6.4) + 'px';
+      }
+      window.onresize = reSize;
+      window.onload = reSize;
+    </script>
+  </body>
+</html>
